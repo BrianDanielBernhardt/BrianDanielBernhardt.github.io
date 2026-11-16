@@ -1,0 +1,36 @@
+BRIAN DANIEL BERNHARDT — ACADEMIC WEBSITE
+
+This folder is already a complete, ready-to-publish website.
+You do NOT need to install Quarto or write code.
+
+HOW TO PREVIEW
+1. Open index.html in any web browser.
+2. Navigate Home, Research, Publications, Talks & Outreach, CV & Experience, Contact.
+
+HOW TO PUT IT ONLINE FOR FREE
+1. Sign in to your PERSONAL account at https://github.com/BrianDanielBernhardt
+2. Open https://github.com/new
+3. Owner: BrianDanielBernhardt
+   Repository name: BrianDanielBernhardt.github.io
+   Visibility: Public
+   Create repository (leave README unchecked).
+4. In the repository choose "uploading an existing file" (or Add file > Upload files).
+5. Upload the CONTENTS of this unzipped folder — all HTML files,
+   styles.css, and the ENTIRE assets folder. Do NOT upload the ZIP as one file.
+   Choose Commit changes.
+6. Open repository Settings > Pages.
+   Build and deployment > Source: Deploy from a branch.
+   Branch: main, Folder: /(root), Save.
+7. After GitHub completes deployment, the site will be available at
+   https://briandanielbernhardt.github.io/
+
+UPDATING
+Edit text in the relevant HTML file or ask for a revised website package.
+Upload the revised files with the same paths to the same repository.
+For an extensible editable version, keep the separate Quarto source ZIP.
+
+BEFORE PUBLISHING
+Please review public photo permissions where other people appear, public CV
+information, and the statuses of manuscripts and accepted contributions.
+
+The site is not published just by downloading this file.
