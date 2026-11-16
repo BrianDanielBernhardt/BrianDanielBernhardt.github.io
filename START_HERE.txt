@@ -1,6 +1,7 @@
 BRIAN DANIEL BERNHARDT — ACADEMIC WEBSITE
 
 This folder is already a complete, ready-to-publish website.
+Version 4 includes a homepage speaking photograph and all 11 event photos.
 You do NOT need to install Quarto or write code.
 
 HOW TO PREVIEW
@@ -34,3 +35,10 @@ Please review public photo permissions where other people appear, public CV
 information, and the statuses of manuscripts and accepted contributions.
 
 The site is not published just by downloading this file.
+
+
+PHOTO UPDATES
+- Home page photo: assets/hero-speaking.webp. Its layout is defined by .hero-portrait in styles.css.
+- Talks & Outreach gallery: 11 actual event photos. The newly added AITI image is at assets/gallery/aiti-emomentum-2026.webp.
+- To change a caption, edit talks.html; to change the hero text or image, edit index.html.
+- The second ZIP (Quarto source) is an alternative workflow: don't mix Quarto-generated pages with hand-edited HTML after publishing.
