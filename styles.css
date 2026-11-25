@@ -209,28 +209,13 @@ body .nav-footer {border-top:1px solid var(--stroke);background:var(--white);col
 .seminar-showcase > .seminar-art,.seminar-showcase > .seminar-copy{min-width:0}
 .seminar-copy a{overflow-wrap:anywhere}
 
-/* October 2026 R seminar: compact homepage teaser + consistent classroom cards */
-.site-seminar-section .seminar-mini-card{margin-top:20px;display:grid;grid-template-columns:215px minmax(0,1fr);align-items:center;background:#fff;border:1px solid var(--stroke);border-radius:15px;overflow:hidden}
-.seminar-mini-visual{display:flex;align-items:center;justify-content:center;min-width:0;background:#eff6f5;padding:16px;height:100%;min-height:165px}
-.seminar-mini-visual img{width:100%;max-height:160px;object-fit:contain;border-radius:5px;background:white}
-.seminar-mini-body{padding:22px 27px;min-width:0}
-.seminar-mini-body h3{font-size:1.16rem;margin:8px 0;line-height:1.32}
-.seminar-mini-body p{color:var(--slate);font-size:.85rem;line-height:1.65;margin:0}
-.seminar-mini-body .seminar-links{margin-top:12px}
-.teaching-resources .seminar-showcase + .seminar-showcase{margin-top:22px}
-.teaching-resources .seminar-alt .seminar-art img{max-width:500px;width:100%;max-height:290px;height:auto;object-fit:contain}
-.teaching-resources .seminar-alt .seminar-copy strong{font-weight:800;color:var(--ink)}
-@media(max-width:660px){.site-seminar-section .seminar-mini-card{grid-template-columns:1fr}.seminar-mini-visual{min-height:0;padding:17px}.seminar-mini-visual img{max-height:210px}.seminar-mini-body{padding:20px}}
-
-
-/* Homepage: matching seminar card sizes */
-
+/* Homepage seminars: matching full-width cards and consistent figure sizing.
+   Scoped to the homepage so Talks & Outreach remains unchanged. */
 .site-seminar-section .seminar-showcase,
 .site-seminar-section .seminar-mini-card {
   min-height: 345px;
   box-sizing: border-box;
 }
-
 .site-seminar-section .seminar-mini-card {
   margin-top: 20px;
   display: grid;
@@ -242,7 +227,6 @@ body .nav-footer {border-top:1px solid var(--stroke);background:var(--white);col
   overflow: hidden;
   box-shadow: 0 5px 18px rgba(17,35,48,.025);
 }
-
 .site-seminar-section .seminar-mini-visual {
   display: flex;
   align-items: center;
@@ -252,7 +236,6 @@ body .nav-footer {border-top:1px solid var(--stroke);background:var(--white);col
   padding: 20px;
   min-height: 285px;
 }
-
 .site-seminar-section .seminar-mini-visual img {
   display: block;
   width: 100%;
@@ -263,56 +246,37 @@ body .nav-footer {border-top:1px solid var(--stroke);background:var(--white);col
   border-radius: 8px;
   background: #fff;
 }
-
 .site-seminar-section .seminar-mini-body {
   padding: 30px 32px;
   align-self: center;
   min-width: 0;
 }
-
 .site-seminar-section .seminar-mini-body h3 {
   font-size: 1.39rem;
   line-height: 1.25;
   margin: 11px 0 13px;
 }
-
 .site-seminar-section .seminar-mini-body p {
   color: var(--slate);
   font-size: .87rem;
   line-height: 1.78;
   margin: 0;
 }
-
-.site-seminar-section .seminar-mini-body .seminar-links {
-  margin-top: 22px;
+.site-seminar-section .seminar-mini-body .seminar-links { margin-top: 22px; }
+/* Maintain existing two-card layout on Talks & Outreach */
+.teaching-resources .seminar-showcase + .seminar-showcase { margin-top: 22px; }
+.teaching-resources .seminar-alt .seminar-art img {
+  max-width: 500px; width: 100%; max-height: 290px; height: auto; object-fit: contain;
 }
-
-/* Mobile layout */
-
+.teaching-resources .seminar-alt .seminar-copy strong {
+  font-weight: 800; color: var(--ink);
+}
 @media (max-width: 730px) {
   .site-seminar-section .seminar-showcase,
-  .site-seminar-section .seminar-mini-card {
-    min-height: 0;
-  }
-
-  .site-seminar-section .seminar-mini-card {
-    grid-template-columns: 1fr;
-  }
-
-  .site-seminar-section .seminar-mini-visual {
-    min-height: 210px;
-    padding: 15px;
-  }
-
-  .site-seminar-section .seminar-mini-visual img {
-    max-height: 245px;
-  }
-
-  .site-seminar-section .seminar-mini-body {
-    padding: 24px;
-  }
-
-  .site-seminar-section .seminar-mini-body h3 {
-    font-size: 1.22rem;
-  }
+  .site-seminar-section .seminar-mini-card { min-height: 0; }
+  .site-seminar-section .seminar-mini-card { grid-template-columns: 1fr; }
+  .site-seminar-section .seminar-mini-visual { min-height: 210px; padding: 15px; }
+  .site-seminar-section .seminar-mini-visual img { max-height: 245px; }
+  .site-seminar-section .seminar-mini-body { padding: 24px; }
+  .site-seminar-section .seminar-mini-body h3 { font-size: 1.22rem; }
 }
