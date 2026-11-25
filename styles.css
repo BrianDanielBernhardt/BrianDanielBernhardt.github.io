@@ -190,3 +190,18 @@ body .nav-footer {border-top:1px solid var(--stroke);background:var(--white);col
 .hero-profile-details p {margin-bottom:8px;}
 @media(max-width:950px){.hero-aside{max-width:650px;}.hero-portrait{height:260px;}}
 @media(max-width:670px){.hero-portrait{height:230px;}.hero-profile-details{padding:20px 22px 23px;}.hero{gap:22px;}}
+
+/* V5: workshop feature using real results from the teaching repository */
+.seminar-showcase{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.1fr);background:#fff;border:1px solid var(--stroke);border-radius:16px;overflow:hidden;box-shadow:0 5px 18px rgba(17,35,48,.025)}
+.seminar-art{display:flex;align-items:center;justify-content:center;background:#eff6f5;padding:19px;min-height:260px;overflow:hidden}
+.seminar-art img{width:100%;height:250px;object-fit:contain;display:block;border-radius:8px;background:#fff}
+.seminar-copy{padding:30px 32px;align-self:center}
+.seminar-copy h3{font-size:1.39rem;line-height:1.25;margin:11px 0 13px}
+.seminar-copy p{font-size:.87rem;color:var(--slate);margin:0;line-height:1.78}
+.seminar-copy .tags{margin-top:18px}
+.seminar-links{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:22px}
+.seminar-links a{font-size:.82rem;font-weight:800;color:var(--accent-dark);text-decoration:underline;text-decoration-color:#b4d2cb;text-underline-offset:4px}
+.seminar-copy .seminar-note{font-size:.75rem;color:#61747c;margin-top:19px;border-top:1px solid var(--stroke);padding-top:13px}
+.site-seminar-section{margin-top:65px}
+.teaching-resources{margin-top:58px}
+@media(max-width:730px){.seminar-showcase{grid-template-columns:1fr}.seminar-art{min-height:210px}.seminar-art img{height:215px}.seminar-copy{padding:24px}.seminar-copy h3{font-size:1.22rem}}
